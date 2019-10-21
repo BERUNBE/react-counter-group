@@ -1,0 +1,17 @@
+.CounterGroup {
+    text-align: center;
+    font-size: 200%;
+    background : black;
+    color : white
+}
+
+.TextField {
+    font-size: 100%;
+    width: 49.5%;
+}  
+
+.Button {
+    text-align: center;
+    font-size: 100%;
+    width: 50%;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Counter from '../Counter/Counter.js';
+import './CounterGroup.css';
 
 class CounterGroup extends React.Component {
     constructor(props) {
@@ -19,11 +20,11 @@ class CounterGroup extends React.Component {
         let items = this.populateCounters();
 
         return (
-          <div>
-            <input type="text" value={this.state.groupSizeInput} onChange={this.handleChange}/>
-            <p><button onClick={this.setCounterSize}>
-                Regenerate indicated Counters </button></p>
-            <p>Sum: {this.state.sum}</p>
+          <div class = "CounterGroup">
+            <input type="text" class="TextField" value={this.state.groupSizeInput} onChange={this.handleChange}/><br/>
+            <button class = "Button" onClick={this.setCounterSize}>
+                Regenerate Counters </button><br/>
+            Sum: {this.state.sum}
             {items}
           </div>
         );
